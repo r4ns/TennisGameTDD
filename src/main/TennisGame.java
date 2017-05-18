@@ -17,7 +17,7 @@ public class TennisGame
 		player1Points++;
 	}
 	
-	public void player2Score(){
+	public void player2Scored(){
 		player2Points++;
 	}
 	
@@ -38,7 +38,7 @@ public class TennisGame
 		if(player1Points==0 && player2Points==0){
 			return score(player1Points)+" - "+score(player2Points);	
 		}
-		else if(player1Points==1 && player2Points==0 ){
+		else if(player1Points==1 && player2Points==0 || player2Points==1 && player1Points==0){
 			return score(player1Points)+" - " + score(player2Points);
 		}
 		else if(player1Points==2 && player2Points==0){
