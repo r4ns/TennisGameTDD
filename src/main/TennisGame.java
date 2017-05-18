@@ -65,6 +65,9 @@ public class TennisGame
 		else if(player1Points==3 && player2Points==3){
 			return "deuce";
 		}
+		else if(player1Points==4 && player2Points==3){
+			return "advantage player 1";
+		}
 		else
 			return "";
 	}
