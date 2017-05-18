@@ -30,8 +30,11 @@ public class TennisGame
 			return "30";
 		else if(points==3)
 			return "40";
+		else if(points==4)
+			return"deuce";
 		else
-		return "";
+			return "";
+		
 	}
 	
 	public String getScore(){
@@ -58,6 +61,9 @@ public class TennisGame
 		}
 		else if(player1Points==2 &&player2Points==3 ||player2Points==2 &&player1Points==3){
 			return score(player1Points)+" - " + score(player2Points);
+		}
+		else if(player1Points==4 && player2Points==4){
+			return "deuce";
 		}
 		else
 			return "";
