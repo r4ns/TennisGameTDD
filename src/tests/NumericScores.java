@@ -180,6 +180,20 @@ public class NumericScores {
 		
 		assertEquals("", "advantage player 1", score);
 	}
+	@Test
+	public void test_AdvantagePlayer2(){
+		game=new TennisGame();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player2Scored();
+		String score=game.getScore();
+		
+		assertEquals("", "advantage player 2", score);
+	}
 	
 	
 	
