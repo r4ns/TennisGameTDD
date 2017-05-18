@@ -33,3 +33,9 @@ EditAction 1495130981946 NumericScores.java 816 3 12 3
 UnitTestCaseAction 1495130986538 NumericScores.java FAIL
 UnitTestSessionAction 1495130986540 NumericScores.test_Player2ScoredTwoTimes FAIL
 EditAction 1495131048534 TennisGame.java 935 5 6 0
+UnitTestCaseAction 1495131059568 NumericScores.java OK
+UnitTestSessionAction 1495131059569 NumericScores.test_Player2ScoredTwoTimes OK
+RefactoringAction 1495131108600 NumericScores.java ADD void test FIELD
+RefactoringAction 1495131113662 NumericScores.java RENAME test_Player2ScoredTwoTimes()=>void test_Player1ScoredTwoTimes() METHOD
+RefactoringAction 1495131138438 NumericScores.java ADD void Player1ScoredTimes() METHOD
+EditAction 1495131197033 TennisGame.java 1052 5 6 0
