@@ -19,3 +19,6 @@ RefactoringAction 1495130528872 NumericScores.java RENAME testIfPlayer1ScoreOneT
 RefactoringAction 1495130559597 NumericScores.java ADD TennisGame game FIELD
 EditAction 1495130696041 NumericScores.java 593 2 7 2
 EditAction 1495130822033 TennisGame.java 821 5 6 0
+RefactoringAction 1495130832400 NumericScores.java RENAME testIfPlayer1ScoreOneTime()=>void test_IfPlayer1ScoreOneTime() METHOD
+RefactoringAction 1495130837421 NumericScores.java RENAME test_IfPlayer1ScoreOneTime()=>void test_Player1ScoreOneTime() METHOD
+EditAction 1495130839210 NumericScores.java 592 2 7 2

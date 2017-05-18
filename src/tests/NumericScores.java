@@ -21,7 +21,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void testIfPlayer1ScoreOneTime(){
+	public void test_Player1ScoreOneTime(){
 		game=new TennisGame();
 		game.player1Scored();
 		String score=game.getScore();
