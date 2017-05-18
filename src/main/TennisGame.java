@@ -44,7 +44,7 @@ public class TennisGame
 		else if(player1Points==2 && player2Points==0 || player2Points==2 && player1Points==0){
 			return score(player1Points)+" - " + score(player2Points);
 		}
-		else if(player1Points==3 && player2Points==0){
+		else if(player1Points==3 && player2Points==0 || player2Points==3 && player1Points==0){
 			return score(player1Points)+" - " + score(player2Points);
 		}
 		
