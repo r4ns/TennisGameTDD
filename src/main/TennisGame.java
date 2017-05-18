@@ -34,7 +34,7 @@ public class TennisGame
 		return "";
 	}
 	
-	public String score(){
+	public String getScore(){
 		if(player1Points==0 && player2Points==0){
 			return score(player1Points)+" - "+score(player2Points);	
 		}

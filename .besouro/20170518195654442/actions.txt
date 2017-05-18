@@ -2,3 +2,6 @@ FileOpenedAction 1495130215085 TennisGame.java 183 4 4 0
 RefactoringAction 1495130303445 TennisGame.java ADD Sting score() METHOD
 EditAction 1495130448921 TennisGame.java 703 5 6 0
 EditAction 1495130454204 NumericScores.java 385 1 3 1
+CompilationAction 1495130456765 NumericScores.java
+RefactoringAction 1495130462190 TennisGame.java RENAME score()=>String getScore() METHOD
+EditAction 1495130469848 TennisGame.java 706 5 6 0
