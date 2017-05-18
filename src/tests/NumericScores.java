@@ -97,6 +97,18 @@ public class NumericScores {
 		
 		assertEquals("Player 1 scored two and player two scored one time", "30 - 15", score);
 	}
+	@Test
+	public void test_1ScoredThreeAnd2ScoredOneTime(){
+		game=new TennisGame();
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		game.player2Scored();
+		String score=game.getScore();
+		
+		assertEquals("Player 1 scored three and player two scored one time", "40 - 15", score);
+	}
+	
 	
 	
 
