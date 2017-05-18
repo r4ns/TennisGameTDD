@@ -74,6 +74,9 @@ public class TennisGame
 		else if(player2Points==player1Points+2){
 			return "game player 2";
 		}
+		else if(player1Points==player2Points+2){
+			return "game player 1";
+		}
 		else
 			return "";
 	}
