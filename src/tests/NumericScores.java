@@ -157,15 +157,30 @@ public class NumericScores {
 	public void test_Deuce(){
 		game=new TennisGame();
 		game.player1Scored();
-		game.player1Scored();
+		game.player2Scored();
 		game.player1Scored();
 		game.player2Scored();
-		game.player2Scored();
+		game.player1Scored();
 		game.player2Scored();
 		String score=game.getScore();
 		
 		assertEquals("", "deuce", score);
 	}
+	@Test
+	public void test_AdvantagePlayer1(){
+		game=new TennisGame();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		String score=game.getScore();
+		
+		assertEquals("", "advantage player 1", score);
+	}
+	
 	
 	
 
