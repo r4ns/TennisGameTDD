@@ -129,6 +129,19 @@ public class NumericScores {
 		
 		assertEquals("Player 2 scored three and player two scored one time", "15 - 40", score);
 	}
+	@Test
+	public void test_2ScoredThreeAnd1ScoredTwoTime(){
+		game=new TennisGame();
+		game.player1Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		String score=game.getScore();
+		
+		assertEquals("Player 2 scored three and player two scored one time", "30 - 40", score);
+	}
+	
 	
 	
 
