@@ -51,3 +51,8 @@ RefactoringAction 1495131318562 NumericScores.java RENAME test_Player1ScoreOneTi
 RefactoringAction 1495131334868 TennisGame.java RENAME player2Score()=>void player2Scored() METHOD
 EditAction 1495131392434 TennisGame.java 1092 5 6 0
 EditAction 1495131395177 NumericScores.java 1266 5 22 5
+UnitTestCaseAction 1495131406120 NumericScores.java OK
+UnitTestSessionAction 1495131406121 NumericScores.test_Player2ScoreOneTime OK
+RefactoringAction 1495131431272 NumericScores.java ADD void test_Player1ScoredTwoTimes()/2 METHOD
+RefactoringAction 1495131434305 NumericScores.java RENAME test_Player1ScoredTwoTimes()/2=>void test_Player2ScoredTwoTimes() METHOD
+EditAction 1495131470908 TennisGame.java 1132 5 6 0
