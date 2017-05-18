@@ -30,8 +30,19 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_Player2ScoredTwoTimes(){
+	public void test_Player1ScoredTwoTimes(){
 		game=new TennisGame();
+		game.player1Scored();
+		game.player1Scored();
+		String score=game.getScore();
+		
+		assertEquals("Player 1 scored two time", "30 - 0", score);
+	}
+	
+	@Test
+	public void test_Player1ScoredTimes(){
+		game=new TennisGame();
+		game.player1Scored();
 		game.player1Scored();
 		game.player1Scored();
 		String score=game.getScore();

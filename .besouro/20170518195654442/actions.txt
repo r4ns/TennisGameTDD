@@ -39,3 +39,4 @@ RefactoringAction 1495131108600 NumericScores.java ADD void test FIELD
 RefactoringAction 1495131113662 NumericScores.java RENAME test_Player2ScoredTwoTimes()=>void test_Player1ScoredTwoTimes() METHOD
 RefactoringAction 1495131138438 NumericScores.java ADD void Player1ScoredTimes() METHOD
 EditAction 1495131197033 TennisGame.java 1052 5 6 0
+EditAction 1495131212212 NumericScores.java 1061 4 18 4
