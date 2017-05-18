@@ -31,7 +31,7 @@ public class TennisGame
 		else if(points==3)
 			return "40";
 		else if(points==4)
-			return"deuce";
+			return"advantage";
 		else
 			return "";
 		
