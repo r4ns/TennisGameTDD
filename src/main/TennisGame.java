@@ -44,34 +44,38 @@ public class TennisGame
 	}
 
 
-	public void player1scored() throws TennisGameException {
+	public void player1scored() throws TennisGameException 
+	{
 		if(gameEnded==true)
 		{
-			throw new TennisGameException();
+			throw new TennisGameException("Player1 can't score because game had already ended");
 		}
-		else 
+		else
 		{
 			player1Points++;
 			checkIfGameEnded();
 		}
-	
-		
 	}
-	
-	public void player2scored() {
-		
-		player2Points++;
+
+	public void player2scored() throws TennisGameException 
+	{
+		if(gameEnded==true)
+		{
+			throw new TennisGameException("Player2 can't score because game had already ended");
+		}
+		else 
+		{
+			player2Points++;
+			checkIfGameEnded();
+		}
 	}
 	
 	public void checkIfGameEnded(){
-		if(player1Points>=4 && player2Points<=3)
+		if(player1Points >= 4 && player1Points == player2Points + 2)
 		{
 			gameEnded=true;
 		}
-		else if(player2Points>=4 && player1Points<=3)
-		{
-			gameEnded=true;
-		}
+		
 		
 	}
 	
@@ -111,11 +115,11 @@ public class TennisGame
 		{
 			return "advantage player2";
 		}
-		else if(player1Points>3 && player2Points<3)
+		else if(player1Points>3 && (player1Points-player2Points)>=2)
 		{
 			return "player1 won";
 		}
-		else if(player2Points>=3 && player1Points<3)
+		else if(player2Points>3 && (player2Points-player1Points)>=2)
 		{
 			return "player2 won";
 		}
