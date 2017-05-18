@@ -55,7 +55,7 @@ public class NumericScores {
 		game.player2Scored();
 		String score=game.getScore();
 		
-		assertEquals("Player 1 scored one time", "0 - 15", score);
+		assertEquals("Player 2 scored one time", "0 - 15", score);
 	}
 	
 	@Test
@@ -65,7 +65,17 @@ public class NumericScores {
 		game.player2Scored();
 		String score=game.getScore();
 		
-		assertEquals("Player 1 scored two time", "0 - 30", score);
+		assertEquals("Player 2 scored two time", "0 - 30", score);
+	}
+	@Test
+	public void test_Player2ScoredThreeTimes(){
+		game=new TennisGame();
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		String score=game.getScore();
+		
+		assertEquals("Player 2 scored three time", "0 - 40", score);
 	}
 	
 	
