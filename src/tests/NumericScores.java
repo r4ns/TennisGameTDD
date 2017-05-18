@@ -194,7 +194,21 @@ public class NumericScores {
 		
 		assertEquals("", "advantage player 2", score);
 	}
-	
+	@Test
+	public void test_GamePlayer2(){
+		game=new TennisGame();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		String score=game.getScore();
+		
+		assertEquals("", "game player 2", score);
+	}
 	
 	
 
