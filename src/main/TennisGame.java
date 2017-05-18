@@ -14,13 +14,43 @@ public class TennisGame
 		gameEnded=false;
 	}
 	
-	public void player1scored()
+	public void player1scored()  throws TennisGameException 
 	{
-		player1Points++;
+		if(gameEnded==true)
+		{
+			throw new TennisGameException();
+		}else
+		{
+			player1Points++;
+			checkGameEnded();
+		}
+		
+		
 	}
-	public void player2scored()
+	public void player2scored() throws TennisGameException 
 	{
-		player2Points++;
+		if (gameEnded==true)
+		{
+			throw new TennisGameException();
+		}else
+		{
+			player2Points++;
+			checkGameEnded();
+		}
+		
+	}
+	private void checkGameEnded()
+	{
+		if (player1Points >=4 && (player1Points-player2Points)>=2)
+		{
+			gameEnded=true;
+		} else if (player2Points >=4 && (player2Points-player1Points>=2))
+		{
+			gameEnded=true;
+		} else 
+		{
+			gameEnded=false;
+		}
 	}
 	
 	public String getScore(int points)
