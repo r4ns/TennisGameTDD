@@ -95,7 +95,7 @@ public class NumericScores {
 		game.player2Scored();
 		String score=game.getScore();
 		
-		assertEquals("Player 1 and player two scored one time", "30 - 15", score);
+		assertEquals("Player 1 scored two and player two scored one time", "30 - 15", score);
 	}
 	
 	
