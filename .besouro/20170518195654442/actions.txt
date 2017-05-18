@@ -169,3 +169,10 @@ EditAction 1495133134937 NumericScores.java 4685 17 109 17
 UnitTestCaseAction 1495133138313 NumericScores.java FAIL
 UnitTestSessionAction 1495133138313 NumericScores.test_AdvantagePlayer2 FAIL
 EditAction 1495133151058 TennisGame.java 2019 5 6 0
+UnitTestCaseAction 1495133165881 NumericScores.java OK
+UnitTestSessionAction 1495133165881 NumericScores.test_AdvantagePlayer2 OK
+RefactoringAction 1495133199487 NumericScores.java ADD void test_AdvantagePlayer2()/2 METHOD
+RefactoringAction 1495133205182 NumericScores.java RENAME test_AdvantagePlayer2()/2=>void test_Game2() METHOD
+RefactoringAction 1495133209862 NumericScores.java RENAME test_Game2()=>void test_GamePla2() METHOD
+RefactoringAction 1495133210954 NumericScores.java RENAME test_GamePla2()=>void test_GamePlayer2() METHOD
+EditAction 1495133338769 TennisGame.java 2093 5 6 0
