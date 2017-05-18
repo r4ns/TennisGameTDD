@@ -121,3 +121,9 @@ EditAction 1495132318596 NumericScores.java 3479 13 72 13
 UnitTestCaseAction 1495132331683 NumericScores.java FAIL
 UnitTestSessionAction 1495132331684 NumericScores.test_2ScoredThreeAnd1ScoredTwoTime FAIL
 EditAction 1495132359064 TennisGame.java 1692 5 6 0
+UnitTestCaseAction 1495132365413 NumericScores.java OK
+UnitTestSessionAction 1495132365417 NumericScores OK
+RefactoringAction 1495132373343 NumericScores.java ADD void test_2ScoredThreeAnd1ScoredTwoTime()/2 METHOD
+RefactoringAction 1495132375934 NumericScores.java RENAME test_2ScoredThreeAnd1ScoredTwoTime()/2=>void test_1ScoredThreeAnd1ScoredTwoTime() METHOD
+RefactoringAction 1495132379009 NumericScores.java RENAME test_1ScoredThreeAnd1ScoredTwoTime()=>void test_1ScoredThreeAnd2ScoredTwoTime() METHOD
+EditAction 1495132411761 NumericScores.java 3756 14 80 14
