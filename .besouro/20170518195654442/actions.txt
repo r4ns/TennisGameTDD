@@ -72,3 +72,18 @@ RefactoringAction 1495131641104 NumericScores.java RENAME test_1andTimes()=>void
 RefactoringAction 1495131648204 NumericScores.java RENAME test_1and2ScoresTimes()=>void test_1and2ScoresOneTimes() METHOD
 EditAction 1495131688383 NumericScores.java 1974 8 38 8
 EditAction 1495131743999 TennisGame.java 1278 5 6 0
+UnitTestCaseAction 1495131753618 NumericScores.java OK
+UnitTestSessionAction 1495131753629 NumericScores OK
+RefactoringAction 1495131773499 NumericScores.java ADD void test_1and2ScoresOneTimes()/2 METHOD
+RefactoringAction 1495131775540 NumericScores.java RENAME test_1and2ScoresOneTimes()/2=>void test_and2ScoresOneTimes() METHOD
+RefactoringAction 1495131791111 NumericScores.java RENAME test_and2ScoresOneTimes()=>void test_and2ScoreTimes() METHOD
+RefactoringAction 1495131792161 NumericScores.java RENAME test_and2ScoreTimes()=>void test_and2ScoredTimes() METHOD
+RefactoringAction 1495131793222 NumericScores.java RENAME test_and2ScoredTimes()=>void test_and2ScoredtTimes() METHOD
+RefactoringAction 1495131795277 NumericScores.java RENAME test_and2ScoredtTimes()=>void test_and2ScoredoneTimes() METHOD
+RefactoringAction 1495131798321 NumericScores.java RENAME test_and2ScoredoneTimes()=>void test_and2ScoredoneTime() METHOD
+RefactoringAction 1495131803855 NumericScores.java RENAME test_and2ScoredoneTime()=>void test_1and2ScoredoneTime() METHOD
+RefactoringAction 1495131807463 NumericScores.java RENAME test_1and2ScoredoneTime()=>void test_1ScoredTwoand2ScoredoneTime() METHOD
+RefactoringAction 1495131811514 NumericScores.java RENAME test_1ScoredTwoand2ScoredoneTime()=>void test_1ScoredTwoAnd2ScoredoneTime() METHOD
+RefactoringAction 1495131817561 NumericScores.java RENAME test_1ScoredTwoAnd2ScoredoneTime()=>void test_1ScoredTwoAnd2ScoredneTime() METHOD
+RefactoringAction 1495131819107 NumericScores.java RENAME test_1ScoredTwoAnd2ScoredneTime()=>void test_1ScoredTwoAnd2ScoredOneTime() METHOD
+EditAction 1495131836832 NumericScores.java 2242 9 44 9
