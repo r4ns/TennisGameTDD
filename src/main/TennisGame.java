@@ -4,7 +4,7 @@ public class TennisGame
 {	
 	private int player1Points;
 	private int player2Points;
-	private boolean gameEnded;
+	private boolean gameEnded ;
 	
 	public TennisGame() 
 	{
