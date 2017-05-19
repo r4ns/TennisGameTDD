@@ -17,7 +17,7 @@ public class TennisGame
 		if(gameEnded==false){
 			player1Points++;
 			checkGame();
-		}else
+		}
 			
 	}
 	

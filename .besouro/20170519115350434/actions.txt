@@ -138,3 +138,4 @@ EditAction 1495189494786 NumericScores.java 4804 17 114 17
 UnitTestCaseAction 1495189498972 NumericScores.java OK
 UnitTestSessionAction 1495189498974 NumericScores (1) OK
 EditAction 1495189621231 TennisGame.java 1594 6 7 0
+EditAction 1495189628137 TennisGame.java 1590 6 8 0
