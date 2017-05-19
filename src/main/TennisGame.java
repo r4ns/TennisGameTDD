@@ -62,7 +62,7 @@ public class TennisGame
 		else if(gameEnded==true && (getScore(player1Points)=="win" || getScore(player1Points)=="adv"))
 			return "game player1";
 		else if(gameEnded==true && (getScore(player2Points)=="win" || getScore(player2Points)=="adv"))
-			return "game player1";
+			return "game player2";
 		else
 			return getScore(player1Points)+" - "+getScore(player2Points);
 	}
