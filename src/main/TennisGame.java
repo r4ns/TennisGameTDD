@@ -45,6 +45,8 @@ public class TennisGame
 			return "40";
 		}else if(points==4){
 			return "win";
+		}else if(points==5){
+			return "adv";
 		}else{
 			return "";
 		}
