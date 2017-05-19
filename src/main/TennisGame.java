@@ -17,12 +17,14 @@ public class TennisGame
 		if(gameEnded==false){
 			player1Points++;
 		}
+		checkGame();
 	}
 	
 	public void player2Score(){
 		if(gameEnded==false){
 			player2Points++;
 		}
+		checkGame();
 	}
 	
 	public void checkGame(){
