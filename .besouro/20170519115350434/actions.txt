@@ -151,3 +151,6 @@ CompilationAction 1495189798165 NumericScores.java
 EditAction 1495189892676 TennisGame.java 1650 6 8 0
 CompilationAction 1495189895112 NumericScores.java
 EditAction 1495189898516 NumericScores.java 5272 17 114 17
+RefactoringAction 1495190084972 NumericScores.java ADD void testException FIELD
+RefactoringAction 1495190086525 NumericScores.java RENAME testException=>void testException() METHOD
+EditAction 1495190115330 NumericScores.java 5574 18 122 17
