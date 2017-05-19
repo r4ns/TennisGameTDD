@@ -149,3 +149,5 @@ RefactoringAction 1495189723647 NumericScores.java ADD import main.TennisGameExc
 EditAction 1495189795721 TennisGame.java 1717 6 8 0
 CompilationAction 1495189798165 NumericScores.java
 EditAction 1495189892676 TennisGame.java 1650 6 8 0
+CompilationAction 1495189895112 NumericScores.java
+EditAction 1495189898516 NumericScores.java 5272 17 114 17
