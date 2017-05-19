@@ -15,7 +15,10 @@ public class TennisGame
 	
 	public void player1Score() throws TennisGameException{
 		if(gameEnded==false){
-			player1Points++;
+			if(player2Points==4)
+				player2Points--;
+			else
+				player1Points++;
 			checkGame();
 		}else
 			throw new TennisGameException();
@@ -23,7 +26,10 @@ public class TennisGame
 	
 	public void player2Score() throws TennisGameException{
 		if(gameEnded==false){
-			player2Points++;
+			if(player1Points==4)
+				player1Points--;
+			else
+				player2Points++;
 			checkGame();
 		}else
 			throw new TennisGameException();
