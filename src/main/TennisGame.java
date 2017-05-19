@@ -13,6 +13,18 @@ public class TennisGame
 		gameEnded=false;
 	}
 	
+	public void player1Score(){
+		if(gameEnded==false){
+			player1Points++;
+		}
+	}
+	
+	public void player2Score(){
+		if(gameEnded==false){
+			player2Points++;
+		}
+	}
+	
 	public String getScore(int points){
 		if(points==0){
 			return "0";

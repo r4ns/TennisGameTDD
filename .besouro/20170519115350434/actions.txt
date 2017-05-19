@@ -14,3 +14,9 @@ RefactoringAction 1495188055337 NumericScores.java ADD void test_StartScore()/2 
 RefactoringAction 1495188060860 NumericScores.java RENAME test_StartScore()/2=>void test_PointsScore() METHOD
 RefactoringAction 1495188063381 NumericScores.java RENAME test_PointsScore()=>void test_PointsOneScore() METHOD
 EditAction 1495188076051 NumericScores.java 563 2 6 2
+RefactoringAction 1495188085362 TennisGame.java ADD void playe FIELD
+RefactoringAction 1495188086391 TennisGame.java RENAME playe=>void player1 FIELD
+RefactoringAction 1495188088914 TennisGame.java RENAME player1=>void player1Score() METHOD
+RefactoringAction 1495188122636 TennisGame.java ADD void player1Score()/2 METHOD
+RefactoringAction 1495188128200 TennisGame.java RENAME player1Score()/2=>void player2Score() METHOD
+EditAction 1495188128888 TennisGame.java 688 5 7 0
