@@ -30,7 +30,7 @@ public class TennisGame
 	public void checkGame(){
 		if((player1Points==4||player1Points==5)&&player1Points - player2Points >=2)
 			gameEnded=true;
-		else if(player2Points - player1Points >=2)
+		else if((player2Points==4||player2Points==5)&&player2Points - player1Points >=2)
 			gameEnded=true;
 	}
 	
