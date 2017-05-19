@@ -127,3 +127,8 @@ RefactoringAction 1495189445794 NumericScores.java RENAME test_AdvantagePlayer2(
 RefactoringAction 1495189446871 NumericScores.java RENAME test_Player2()=>void test_winPlayer2() METHOD
 EditAction 1495189454968 NumericScores.java 4484 16 105 16
 EditAction 1495189461918 NumericScores.java 4479 16 105 16
+UnitTestCaseAction 1495189465565 NumericScores.java OK
+UnitTestSessionAction 1495189465567 NumericScores (1) OK
+RefactoringAction 1495189471051 NumericScores.java ADD void test_winPlayer2()/2 METHOD
+RefactoringAction 1495189473182 NumericScores.java RENAME test_winPlayer2()/2=>void test_winPlayer1() METHOD
+EditAction 1495189478425 NumericScores.java 4804 17 114 17

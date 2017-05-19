@@ -194,5 +194,19 @@ public class NumericScores {
 
 		assertEquals("Initial score incorrect", "game player2", score);	
 	}
+	@Test
+	public void test_winPlayer1() {
+		TennisGame game = new TennisGame();
+		game.player2Score();
+		game.player1Score();
+		game.player2Score();
+		game.player1Score();
+		game.player2Score();
+		game.player1Score();
+		
+		String score = game.getScore() ;
+
+		assertEquals("Initial score incorrect", "game player1", score);	
+	}
 
 }
