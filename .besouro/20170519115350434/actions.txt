@@ -8,3 +8,9 @@ EditAction 1495187968236 TennisGame.java 463 3 4 0
 CompilationAction 1495187972167 TennisGame.java
 EditAction 1495188021376 TennisGame.java 524 3 5 0
 EditAction 1495188039657 NumericScores.java 381 1 3 1
+UnitTestCaseAction 1495188047714 NumericScores.java OK
+UnitTestSessionAction 1495188047724 NumericScores (1) OK
+RefactoringAction 1495188055337 NumericScores.java ADD void test_StartScore()/2 METHOD
+RefactoringAction 1495188060860 NumericScores.java RENAME test_StartScore()/2=>void test_PointsScore() METHOD
+RefactoringAction 1495188063381 NumericScores.java RENAME test_PointsScore()=>void test_PointsOneScore() METHOD
+EditAction 1495188076051 NumericScores.java 563 2 6 2
