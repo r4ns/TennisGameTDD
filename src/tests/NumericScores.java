@@ -20,6 +20,8 @@ public class NumericScores {
 	@Test
 	public void test_PointsOneScore() {
 		TennisGame game = new TennisGame();
+		game.player1Score();
+		
 		String score = game.getScore() ;
 
 		assertEquals("Initial score incorrect", "15 - 0", score);	

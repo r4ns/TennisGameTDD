@@ -20,3 +20,4 @@ RefactoringAction 1495188088914 TennisGame.java RENAME player1=>void player1Scor
 RefactoringAction 1495188122636 TennisGame.java ADD void player1Score()/2 METHOD
 RefactoringAction 1495188128200 TennisGame.java RENAME player1Score()/2=>void player2Score() METHOD
 EditAction 1495188128888 TennisGame.java 688 5 7 0
+EditAction 1495188144601 NumericScores.java 589 2 7 2
