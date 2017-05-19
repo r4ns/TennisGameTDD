@@ -18,6 +18,7 @@ public class TennisGame
 			throw new TennisGameException("Player can't score!");
 		} else {
 			player1Points++;
+			checkGameEnded();
 		}
 	}
 	
@@ -26,6 +27,7 @@ public class TennisGame
 			throw new TennisGameException("Player can't score!");
 		} else {
 			player2Points++;
+			checkGameEnded();
 		}
 	}
 	
@@ -52,8 +54,7 @@ public class TennisGame
 	}
 		
 	public String getScore() throws TennisGameException {
-	  if (!gameEnded) {
-		if (player1Points >= 3 && player2Points == player1Points) {
+	  	if (player1Points >= 3 && player2Points == player1Points) {
 			return "deuce";
 		} else if (player1Points > 3 && (player1Points - player2Points) == 1) {
 			return "advantage player 1";
@@ -63,10 +64,7 @@ public class TennisGame
 			return "game player 1";
 		} else if (player2Points > 3 && (player2Points - player1Points) > 1) {
 			return "game player 2";
-		}
-	  } else {
-		  throw new TennisGameException("Player can't score!");
-	  }
+		}	  
 		
 		return getScore(player1Points) + " - " + getScore(player2Points);
 	}
