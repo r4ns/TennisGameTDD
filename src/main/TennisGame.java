@@ -34,13 +34,17 @@ public class TennisGame
 			return "30";
 		}else if(points==3){
 			return "40";
-		}else
+		}else if(points==4){
+			return "win";
+		}else{
 			return "";
+		}
 	}
 
 	public String getScore(){
 		if(getScore(player1Points)=="40"&&getScore(player2Points)=="40")
 			return "deuce";
+		else if()
 		else
 			return getScore(player1Points)+" - "+getScore(player2Points);
 	}
