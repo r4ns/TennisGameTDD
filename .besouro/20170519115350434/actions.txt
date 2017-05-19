@@ -1,0 +1,7 @@
+FileOpenedAction 1495187631004 TennisGame.java 183 1 0 0
+RefactoringAction 1495187717974 NumericScores.java ADD void test_StartScore() METHOD
+RefactoringAction 1495187733483 NumericScores.java ADD import main.TennisGame IMPORT
+RefactoringAction 1495187788769 TennisGame.java ADD String getScore() METHOD
+RefactoringAction 1495187848875 TennisGame.java ADD String getScore()/2 METHOD
+RefactoringAction 1495187852917 TennisGame.java RENAME getScore()/2=>int getScore(int) METHOD
+EditAction 1495187968236 TennisGame.java 463 3 4 0
