@@ -109,3 +109,4 @@ UnitTestCaseAction 1495188767624 NumericScores.java OK
 UnitTestSessionAction 1495188767627 NumericScores (1) OK
 RefactoringAction 1495188827896 TennisGame.java ADD void checkGame() METHOD
 EditAction 1495188862977 TennisGame.java 1189 6 8 0
+EditAction 1495188871011 TennisGame.java 1189 6 8 0
