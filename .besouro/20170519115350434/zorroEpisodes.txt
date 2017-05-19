@@ -16,4 +16,5 @@
 1495189640735 regression 1 0 true
 1495190121997 refactoring 3 481 true
 1495190172106 test-last 1 50 false
-1495190234513 test-addition 1 62 false
+1495190234513 test-addition 1 62 true
+1495190369516 test-first 3 135 true
