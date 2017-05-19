@@ -38,3 +38,12 @@ UnitTestSessionAction 1495188207831 NumericScores (1) OK
 RefactoringAction 1495188219245 NumericScores.java ADD void test_PlayerOneScoreTwo()/2 METHOD
 RefactoringAction 1495188222772 NumericScores.java RENAME test_PlayerOneScoreTwo()/2=>void test_PlayerOneScoreThree() METHOD
 EditAction 1495188230427 NumericScores.java 1290 5 22 5
+UnitTestCaseAction 1495188234904 NumericScores.java OK
+UnitTestSessionAction 1495188234906 NumericScores (1) OK
+RefactoringAction 1495188251917 NumericScores.java REMOVE test_PlayerTwoScore() METHOD
+RefactoringAction 1495188257971 NumericScores.java ADD void test_PlayerTwoScore() METHOD
+RefactoringAction 1495188264511 NumericScores.java ADD void test_PlayerTwoScore()/2 METHOD
+RefactoringAction 1495188277135 NumericScores.java RENAME test_PlayerTwoScore()/2=>void test_PlayerTwoScoreTwo() METHOD
+RefactoringAction 1495188281202 NumericScores.java ADD void test_PlayerTwoScoreTwo()/2 METHOD
+RefactoringAction 1495188284735 NumericScores.java RENAME test_PlayerTwoScoreTwo()/2=>void test_PlayerTwoScoreThree() METHOD
+EditAction 1495188287448 NumericScores.java 1758 7 32 7
