@@ -68,3 +68,11 @@ RefactoringAction 1495188433255 NumericScores.java RENAME test_3030Player2()=>vo
 RefactoringAction 1495188435287 NumericScores.java RENAME test_3030APlayer2()=>void test_3030AllPlayer2() METHOD
 RefactoringAction 1495188438822 NumericScores.java RENAME test_3030AllPlayer2()=>void test_3030All() METHOD
 EditAction 1495188448435 NumericScores.java 2527 10 51 10
+UnitTestCaseAction 1495188455913 NumericScores.java OK
+UnitTestSessionAction 1495188455915 NumericScores (1) OK
+RefactoringAction 1495188474937 NumericScores.java ADD void test_3030All()/2 METHOD
+RefactoringAction 1495188477989 NumericScores.java RENAME test_3030All()/2=>void test_4030All() METHOD
+RefactoringAction 1495188481561 NumericScores.java RENAME test_4030All()=>void test_4030Player1() METHOD
+RefactoringAction 1495188492668 NumericScores.java ADD void test_4030Player1()/2 METHOD
+RefactoringAction 1495188497238 NumericScores.java RENAME test_4030Player1()/2=>void test_4030Player2() METHOD
+EditAction 1495188503102 NumericScores.java 3123 12 67 12
