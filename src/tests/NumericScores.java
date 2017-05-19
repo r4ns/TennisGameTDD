@@ -4,10 +4,12 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import main.TennisGame;
+
 // Testing of midgame scores before both players score three times
 public class NumericScores {
 
-	/*
+	
 	@Test
 	public void test_StartScore() {
 		TennisGame game = new TennisGame();
@@ -15,6 +17,6 @@ public class NumericScores {
 
 		assertEquals("Initial score incorrect", "0 - 0", score);	
 	}
-	*/
+	
 
 }

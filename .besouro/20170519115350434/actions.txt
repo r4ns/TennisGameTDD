@@ -7,3 +7,4 @@ RefactoringAction 1495187852917 TennisGame.java RENAME getScore()/2=>int getScor
 EditAction 1495187968236 TennisGame.java 463 3 4 0
 CompilationAction 1495187972167 TennisGame.java
 EditAction 1495188021376 TennisGame.java 524 3 5 0
+EditAction 1495188039657 NumericScores.java 381 1 3 1
