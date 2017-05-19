@@ -105,3 +105,7 @@ UnitTestSessionAction 1495188735800 NumericScores.test_AdvantagePlayer1 OK
 RefactoringAction 1495188744152 NumericScores.java ADD void test_AdvantagePlayer1()/2 METHOD
 RefactoringAction 1495188746701 NumericScores.java RENAME test_AdvantagePlayer1()/2=>void test_AdvantagePlayer2() METHOD
 EditAction 1495188752757 NumericScores.java 4154 15 96 15
+UnitTestCaseAction 1495188767624 NumericScores.java OK
+UnitTestSessionAction 1495188767627 NumericScores (1) OK
+RefactoringAction 1495188827896 TennisGame.java ADD void checkGame() METHOD
+EditAction 1495188862977 TennisGame.java 1189 6 8 0
