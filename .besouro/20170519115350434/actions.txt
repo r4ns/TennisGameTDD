@@ -50,3 +50,13 @@ EditAction 1495188287448 NumericScores.java 1758 7 32 7
 UnitTestCaseAction 1495188292033 NumericScores.java FAIL
 UnitTestSessionAction 1495188292037 NumericScores (1) FAIL
 EditAction 1495188308843 NumericScores.java 1781 7 33 7
+UnitTestCaseAction 1495188313053 NumericScores.java OK
+UnitTestSessionAction 1495188313055 NumericScores (1) OK
+RefactoringAction 1495188337491 NumericScores.java ADD void test_PlayerTwoScoreThree()/2 METHOD
+RefactoringAction 1495188365189 NumericScores.java RENAME test_PlayerTwoScoreThree()/2=>void test_() METHOD
+RefactoringAction 1495188367251 NumericScores.java RENAME test_()=>void test_15All() METHOD
+RefactoringAction 1495188372793 NumericScores.java ADD void test_15All()/2 METHOD
+RefactoringAction 1495188389836 NumericScores.java RENAME test_15All()/2=>void test_30 FIELD
+RefactoringAction 1495188394910 NumericScores.java RENAME test_3015()=>void test_3015Player1() METHOD
+RefactoringAction 1495188399940 NumericScores.java RENAME test_3015Player1()=>void test_3015Player2() METHOD
+EditAction 1495188410211 NumericScores.java 2256 9 44 9
