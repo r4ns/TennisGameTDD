@@ -71,6 +71,7 @@ public class NumericScores {
 		TennisGame game = new TennisGame();
 		game.player2Score();
 		game.player2Score();
+		game.player2Score();
 		
 		String score = game.getScore() ;
 
