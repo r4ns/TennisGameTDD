@@ -5,3 +5,5 @@ RefactoringAction 1495187788769 TennisGame.java ADD String getScore() METHOD
 RefactoringAction 1495187848875 TennisGame.java ADD String getScore()/2 METHOD
 RefactoringAction 1495187852917 TennisGame.java RENAME getScore()/2=>int getScore(int) METHOD
 EditAction 1495187968236 TennisGame.java 463 3 4 0
+CompilationAction 1495187972167 TennisGame.java
+EditAction 1495188021376 TennisGame.java 524 3 5 0

@@ -27,6 +27,6 @@ public class TennisGame
 	}
 
 	public String getScore(){
-		
+		return getScore(player1Points)+" - "+getScore(player2Points);
 	}
 }
