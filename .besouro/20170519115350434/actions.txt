@@ -80,3 +80,9 @@ UnitTestCaseAction 1495188515075 NumericScores.java OK
 UnitTestSessionAction 1495188515077 NumericScores (1) OK
 RefactoringAction 1495188525468 NumericScores.java ADD void test_4030Player1()/2 METHOD
 EditAction 1495188536093 NumericScores.java 3442 13 76 13
+CompilationAction 1495188538749 NumericScores.java
+RefactoringAction 1495188542645 NumericScores.java RENAME test_4030Player1()/2=>void test_Deuce() METHOD
+CompilationAction 1495188543176 NumericScores.java
+UnitTestCaseAction 1495188545410 NumericScores.java FAIL
+UnitTestSessionAction 1495188545412 NumericScores.test_Deuce FAIL
+EditAction 1495188601545 TennisGame.java 782 5 7 0
