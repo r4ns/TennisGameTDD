@@ -18,13 +18,32 @@ public class NumericScores {
 		assertEquals("Initial score incorrect", "0 - 0", score);	
 	}
 	@Test
-	public void test_PointsOneScore() {
+	public void test_PlayerOneScore() {
 		TennisGame game = new TennisGame();
 		game.player1Score();
 		
 		String score = game.getScore() ;
 
 		assertEquals("Initial score incorrect", "15 - 0", score);	
+	}
+	@Test
+	public void test_PlayerTwoScore() {
+		TennisGame game = new TennisGame();
+		game.player2Score();
+		
+		String score = game.getScore() ;
+
+		assertEquals("Initial score incorrect", "0 - 15", score);	
+	}
+	@Test
+	public void test_PlayerOneScoreTwo() {
+		TennisGame game = new TennisGame();
+		game.player1Score();
+		game.player1Score();
+		
+		String score = game.getScore() ;
+
+		assertEquals("Initial score incorrect", "30 - 0", score);	
 	}
 	
 
