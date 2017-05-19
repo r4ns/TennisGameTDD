@@ -167,3 +167,8 @@ UnitTestSessionAction 1495190172106 NumericScores (1) OK
 RefactoringAction 1495190209545 NumericScores.java ADD void test_winPlayer1()/2 METHOD
 RefactoringAction 1495190215589 NumericScores.java RENAME test_winPlayer1()/2=>void test_winPlayer1AfterDeuce() METHOD
 EditAction 1495190227748 NumericScores.java 6290 20 141 18
+UnitTestCaseAction 1495190234511 NumericScores.java OK
+UnitTestSessionAction 1495190234513 NumericScores (1) OK
+RefactoringAction 1495190249401 NumericScores.java ADD void test_winPlayer1AfterDeuce()/2 METHOD
+RefactoringAction 1495190252508 NumericScores.java RENAME test_winPlayer1AfterDeuce()/2=>void test_winPlayer2AfterDeuce() METHOD
+EditAction 1495190269724 NumericScores.java 6744 21 154 19
