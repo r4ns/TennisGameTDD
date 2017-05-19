@@ -59,6 +59,10 @@ public class TennisGame
 			return "advantage player1";
 		else if(getScore(player2Points)=="win"&&getScore(player1Points)=="40")
 			return "advantage player2";
+		else if(gameEnded==true && (getScore(player1Points)=="win" || getScore(player1Points)=="adv"))
+			return "game player1";
+		else if(gameEnded==true && (getScore(player2Points)=="win" || getScore(player2Points)=="adv"))
+			return "game player1";
 		else
 			return getScore(player1Points)+" - "+getScore(player2Points);
 	}
