@@ -94,3 +94,14 @@ EditAction 1495188643614 NumericScores.java 3795 14 86 14
 UnitTestCaseAction 1495188647869 NumericScores.java FAIL
 UnitTestSessionAction 1495188647871 NumericScores.test_AdvantagePlayer1 FAIL
 EditAction 1495188690798 TennisGame.java 839 5 6 0
+CompilationAction 1495188693108 TennisGame.java
+CompilationAction 1495188693109 TennisGame.java
+CompilationAction 1495188693110 TennisGame.java
+CompilationAction 1495188731707 TennisGame.java
+CompilationAction 1495188731708 TennisGame.java
+CompilationAction 1495188731709 TennisGame.java
+UnitTestCaseAction 1495188735799 NumericScores.java OK
+UnitTestSessionAction 1495188735800 NumericScores.test_AdvantagePlayer1 OK
+RefactoringAction 1495188744152 NumericScores.java ADD void test_AdvantagePlayer1()/2 METHOD
+RefactoringAction 1495188746701 NumericScores.java RENAME test_AdvantagePlayer1()/2=>void test_AdvantagePlayer2() METHOD
+EditAction 1495188752757 NumericScores.java 4154 15 96 15

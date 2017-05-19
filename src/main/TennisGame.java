@@ -44,7 +44,10 @@ public class TennisGame
 	public String getScore(){
 		if(getScore(player1Points)=="40"&&getScore(player2Points)=="40")
 			return "deuce";
-		else if()
+		else if(getScore(player1Points)=="win"&&getScore(player2Points)=="40")
+			return "advantage player1";
+		else if(getScore(player2Points)=="win"&&getScore(player1Points)=="40")
+			return "advantage player2";
 		else
 			return getScore(player1Points)+" - "+getScore(player2Points);
 	}
