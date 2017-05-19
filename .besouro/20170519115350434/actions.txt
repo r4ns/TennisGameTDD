@@ -33,3 +33,8 @@ RefactoringAction 1495188187009 NumericScores.java RENAME test_PointsOneScore()=
 RefactoringAction 1495188188536 NumericScores.java RENAME test_POneScore()=>void test_PlayerOneScore()/2 METHOD
 RefactoringAction 1495188192566 NumericScores.java RENAME test_PlayerOneScore()/2=>void test_PlayerOneScoreTwo() METHOD
 EditAction 1495188203027 NumericScores.java 1031 4 16 4
+UnitTestCaseAction 1495188207828 NumericScores.java OK
+UnitTestSessionAction 1495188207831 NumericScores (1) OK
+RefactoringAction 1495188219245 NumericScores.java ADD void test_PlayerOneScoreTwo()/2 METHOD
+RefactoringAction 1495188222772 NumericScores.java RENAME test_PlayerOneScoreTwo()/2=>void test_PlayerOneScoreThree() METHOD
+EditAction 1495188230427 NumericScores.java 1290 5 22 5
