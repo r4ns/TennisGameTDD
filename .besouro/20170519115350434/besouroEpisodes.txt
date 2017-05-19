@@ -21,3 +21,6 @@
 1495188414991 test-addition 1 77 true
 1495188455915 test-addition 1 31 true
 1495188455916 test-addition 1 31 true
+1495188515077 test-addition 1 40 true
+1495188515078 test-addition 1 40 true
+1495188515079 test-addition 1 40 true
