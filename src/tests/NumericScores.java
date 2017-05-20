@@ -301,7 +301,7 @@ public class NumericScores {
 	
 	
 	@Test(expected=TennisGameException.class)
-	public void test_player1_is_Noob()throws TennisGameException{
+	public void test_player1_make_Exception()throws TennisGameException{
 		TennisGame game = new TennisGame();
 	
 		game.player1Scored();
@@ -320,7 +320,7 @@ public class NumericScores {
 	}
 	
 	@Test(expected=TennisGameException.class)
-	public void test_player2_is_Noob()throws TennisGameException{
+	public void test_player2_make_Exception()throws TennisGameException{
 		TennisGame game = new TennisGame();
 	
 		game.player1Scored();
@@ -337,11 +337,165 @@ public class NumericScores {
 		String score = game.getScore();
 	}
 	
+	@Test
+	public void test_player1_have_advantage_and_player1_win_point()throws TennisGameException{
+		TennisGame game = new TennisGame();
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		
+		game.player1Scored();
+		
+		game.player2Scored();
+		
+		String expected = ("deuce");
+		String score=game.getScore();
+		
+		assertEquals(expected, score);
+	}
 	
+	@Test
+	public void test_player2_have_advantage_and_player1_win_point()throws TennisGameException{
+		TennisGame game= new TennisGame();
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		
+		game.player2Scored();
+		
+		game.player1Scored();
+		
+		String expected = "deuce";
+		String score=game.getScore();
+		
+		assertEquals(expected, score);
+	}
 	
+	@Test
+	public void test_player2_have_advantage_and_player1_win_game()throws TennisGameException{
+		TennisGame game= new TennisGame();
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		
+		game.player2Scored();
+		
+		game.player1Scored();
+		
+		game.player1Scored();
+		game.player1Scored();
+		
+		String expected = "player1 WIN";
+		String score=game.getScore();
+		
+		assertEquals(expected, score);
+	}
 	
+	@Test
+	public void test_player2_win_0_then_player1_win_game()throws TennisGameException{
+		TennisGame game= new TennisGame();
+		
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		
+		String expected="player1 WIN";
+		String score= game.getScore();
+		
+		assertEquals(expected, score);
+	}
 	
+	@Test
+	public void test_player2_win_15_then_player1_win_game()throws TennisGameException{
+		TennisGame game= new TennisGame();
+		game.player2Scored();
+		
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		
+		String expected="player1 WIN";
+		String score= game.getScore();
+		
+		assertEquals(expected, score);
+	}
 	
+	@Test
+	public void test_player2_win_30_then_player1_win_game()throws TennisGameException{
+		TennisGame game= new TennisGame();
+		game.player2Scored();
+		game.player2Scored();
+		
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+		
+		String expected="player1 WIN";
+		String score= game.getScore();
+		
+		assertEquals(expected, score);
+	}
 	
+	@Test
+	public void test_player1_win_0_then_player2_win_game()throws TennisGameException{
+		TennisGame game= new TennisGame();
 	
+		
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		
+		String expected="player2 WIN";
+		String score= game.getScore();
+		
+		assertEquals(expected, score);
+	}
+	@Test
+	public void test_player1_win_15_then_player2_win_game()throws TennisGameException{
+		TennisGame game= new TennisGame();
+		game.player1Scored();
+		
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		
+		String expected="player2 WIN";
+		String score= game.getScore();
+		
+		assertEquals(expected, score);
+	}
+	
+	@Test
+	public void test_player1_win_30_then_player2_win_game()throws TennisGameException{
+		TennisGame game= new TennisGame();
+		game.player1Scored();
+		game.player1Scored();
+		
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		game.player2Scored();
+		
+		String expected="player2 WIN";
+		String score= game.getScore();
+		
+		assertEquals(expected, score);
+	}
 }
