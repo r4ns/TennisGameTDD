@@ -13,21 +13,48 @@ public class TennisGame
 		gameEnded = false;
 	}
 	
-	public void player1Scored()
+	public void player1Scored() throws TennisGameException
 	{
-		if(gameEnded != true)
+		if(gameEnded != false)
+		{
+			throw new TennisGameException();
+		}
+		else
 		{
 			player1Points++;
 		}
+		checkGameEnded();
 		
 	}
 	
-	public void player2Scored()
+	public void player2Scored() throws TennisGameException
 	{
-		if(gameEnded != true)
+		if(gameEnded != false)
+		{
+			throw new TennisGameException();
+		}
+		else 
 		{
 			player2Points++;
 		}
+		checkGameEnded();
+	}
+	
+	public void checkGameEnded()
+	{
+		if(player1Points>=4)
+		{
+			if(player1Points - player2Points == 2)
+			{
+				gameEnded = true;
+			}
+			else if(player2Points - player1Points == 2)
+			{
+				gameEnded = true;
+			}
+		}
+		
+		gameEnded = false;
 	}
 	
 	private String getScore(int points)
@@ -52,23 +79,39 @@ public class TennisGame
 		{
 			return "advantage";
 		}
-		else
+		else if(points == 5)
+		{
 			return "game ended";
-	}
+		}
+		else
+			return "";
+		}
 	
 	public String getScore()
 	{
-		if(getScore(player1Points) == "40" && getScore(player2Points) == "40")
+		if(player1Points == 0 && player2Points == 0)
+		{
+			return "0 - 0";
+		}
+		else if(player1Points == 3 && player2Points == 3)
 		{
 			return "deuce";
 		}
-		if(getScore(player1Points) == "advantage" && getScore(player2Points) == "40" )
+		else if(player1Points == 4 && player2Points == 3)
 		{
 			return "advantage player1";
 		}
-		if(getScore(player1Points) == "40" && getScore(player2Points) == "advantage" )
+		else if(player1Points == 3 && player2Points == 4)
 		{
 			return "advantage player2";
+		}
+		else if(player1Points == 5 && player2Points <= 3)
+		{
+			return "game player1";
+		}
+		else if(player2Points == 5 && player1Points <= 3)
+		{
+			return "game player2";
 		}
 		else
 			return getScore(player1Points) + " - " + getScore(player2Points);
