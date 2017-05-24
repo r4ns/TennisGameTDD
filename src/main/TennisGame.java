@@ -75,8 +75,6 @@ public class TennisGame
 			{
 				rez="advantage 2";
 			}
-		
-		
 			else if(igrac1.equals("40") && igrac2.equals("40"))
 			{
 				rez="deuce";
