@@ -13,6 +13,7 @@ public class NumericScores {
 	
 	@Test
 	public void test_StartScore() {
+		
 		TennisGame game = new TennisGame();
 		String score = game.getScore() ;
 
@@ -258,17 +259,33 @@ public class NumericScores {
 		 
 		 TennisGame game = new TennisGame();
 		 game.player1Scored();
-		 game.player1Scored();
-		 game.player1Scored();
-		 game.player1Scored();
 		 game.player2Scored();
 		 game.player2Scored();
+		 game.player1Scored();
 		 game.player2Scored();
-		 
+		 game.player1Scored();
+		 game.player1Scored();
 		 
 		 String score = game.getScore();
 		 
 		 assertEquals("Initial score incorrect", "adventage", score);
+		 
+		 
+	 }
+	 
+	 @Test 
+	 public void testForCheckGameEnded() throws TennisGameException{
+		 
+		 
+		 TennisGame game = new TennisGame();
+		 game.player1Scored();
+		 game.player2Scored();
+		 game.player2Scored();
+		 game.player1Scored();
+		 game.player1Scored();
+		 game.player1Scored();
+		 
+		 assertTrue(game.checkGameEnded());
 		 
 		 
 	 }
@@ -284,13 +301,11 @@ public class NumericScores {
 		 game.player1Scored();
 		 game.player2Scored();
 		 game.player2Scored();
-		 game.player2Scored();
-		 
-		 
-		 
-		 
-		 
+		 game.player2Scored();		 
 	 }
+	 
+	 
+	 
 	 
 	 
 	 

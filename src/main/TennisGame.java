@@ -15,22 +15,42 @@ public class TennisGame
 		
 		
 			
-			check();
-			
-		
-			
+		checkGameEnded();
+		if(gameEnded==true){
 
-		player1Points++;
+			throw new TennisGameException();
+		} else {
+
+			player1Points++;
+
+		}
 	}
 	
 	public void player2Scored() throws TennisGameException{
 		
-			if(player2Points>4){
-			
+		checkGameEnded();
+		if(gameEnded==true){
+
 			throw new TennisGameException();
+		} else {
+
+			player2Points++;
 		}
-		
-		player2Points++;
+	}
+	
+	
+	public boolean checkGameEnded()
+	{ 
+		if((player1Points>=4 && player1Points>=(player2Points+2)) || (player2Points>=4 && player2Points>=(player1Points+2))){
+
+			gameEnded=true;
+			return true;
+
+		} else {
+
+			gameEnded=false;
+			return false; 
+		}
 	}
 	
 	
@@ -108,7 +128,7 @@ public class TennisGame
 			
 			return "deuce";
 			
-		} else if((player1Points>=3 && player2Points>=3) && player1Points-player2Points==1){
+		} else if((player1Points>=3 && player2Points>=3) && (player1Points==player2Points+1 || player2Points==player1Points+1)){
 			
 			return "adventage";
 		}
