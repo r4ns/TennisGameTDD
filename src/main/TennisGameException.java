@@ -2,7 +2,7 @@ package main;
 
 public class TennisGameException extends Exception 
 {
-	public String exception(){
+	public String TennisGameException(){
 		return "Gotovo";
 	}
 }
