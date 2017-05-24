@@ -1,0 +1,1 @@
+FileOpenedAction 1495133532682 NumericScores.java 5361 19 131 19
