@@ -11,14 +11,27 @@ public class TennisGame
 		// TO BE IMPLEMENTED
 		this.player1Points=0;
 		this.player2Points=0;
+		gameEnded=true;
 	}
 	
-	public void player1Scored(){
-		player1Points++;
+	public void player1Scored() throws TennisGameException{
+		
+		if(gameEnded)
+ 			throw new TennisGameException();
+ 		player1Points++;
+ 		if(player1Points >= 4 && player1Points == player2Points + 2){
+ 			gameEnded = true;
+ 		}
+		
 	}
 	
-	public void player2Scored(){
-		player2Points++;
+	public void player2Scored() throws TennisGameException{
+		if(gameEnded)
+ 			throw new TennisGameException();
+ 		player2Points++;
+ 		if(player2Points >= 4 && player2Points == player1Points + 2){
+ 			gameEnded = true;
+ 		}
 	}
 	
 	public String score (int points){
@@ -38,29 +51,8 @@ public class TennisGame
 	}
 	
 	public String getScore(){
-		if(player1Points==0 && player2Points==0){
-			return score(player1Points)+" - "+score(player2Points);	
-		}
-		else if(player1Points==1 && player2Points==0 || player2Points==1 && player1Points==0){
-			return score(player1Points)+" - " + score(player2Points);
-		}
-		else if(player1Points==2 && player2Points==0 || player2Points==2 && player1Points==0){
-			return score(player1Points)+" - " + score(player2Points);
-		}
-		else if(player1Points==3 && player2Points==0 || player2Points==3 && player1Points==0){
-			return score(player1Points)+" - " + score(player2Points);
-		}
-		else if(player1Points==player2Points){
-			return score(player1Points)+" - " + score(player2Points);
-		}
-		else if(player1Points==2 &&player2Points==1 || player2Points==2 &&player1Points==1){
-			return score(player1Points)+" - " + score(player2Points);
-		}
-		else if(player1Points==3 &&player2Points==1 || player2Points==3 &&player1Points==1){
-			return score(player1Points)+" - " + score(player2Points);
-		}
-		else if(player1Points==2 &&player2Points==3 ||player2Points==2 &&player1Points==3){
-			return score(player1Points)+" - " + score(player2Points);
+		if(player1Points<=2 || player2Points<=2){
+			return score(player1Points)+" - "+score(player2Points);
 		}
 		else if(player1Points==3 && player2Points==3){
 			return "deuce";

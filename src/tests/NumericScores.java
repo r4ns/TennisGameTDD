@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import main.TennisGame;
+import main.TennisGameException;
 
 // Testing of midgame scores before both players score three times
 public class NumericScores {
@@ -21,7 +22,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_Player1ScoreOneTime(){
+	public void test_Score15_0() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		String score=game.getScore();
@@ -30,7 +31,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_Player1ScoredTwoTimes(){
+	public void test_Score30_0() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player1Scored();
@@ -40,7 +41,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_Player1ScoredThreeTimes(){
+	public void test_Score40_0() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player1Scored();
@@ -50,7 +51,7 @@ public class NumericScores {
 		assertEquals("Player 1 scored three time", "40 - 0", score);
 	}
 	@Test
-	public void test_Player2ScoreOneTime(){
+	public void test_Score0_15() throws TennisGameException{
 		game=new TennisGame();
 		game.player2Scored();
 		String score=game.getScore();
@@ -59,7 +60,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_Player2ScoredTwoTimes(){
+	public void test_Score0_30() throws TennisGameException{
 		game=new TennisGame();
 		game.player2Scored();
 		game.player2Scored();
@@ -68,7 +69,7 @@ public class NumericScores {
 		assertEquals("Player 2 scored two time", "0 - 30", score);
 	}
 	@Test
-	public void test_Player2ScoredThreeTimes(){
+	public void test_Score0_40() throws TennisGameException{
 		game=new TennisGame();
 		game.player2Scored();
 		game.player2Scored();
@@ -79,7 +80,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_1and2ScoresOneTimes(){
+	public void test_Score15_15() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -88,7 +89,7 @@ public class NumericScores {
 		assertEquals("Player 1 and player two scored one time", "15 - 15", score);
 	}
 	@Test
-	public void test_1ScoredTwoAnd2ScoredOneTime(){
+	public void test_Score30_15() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player1Scored();
@@ -98,7 +99,7 @@ public class NumericScores {
 		assertEquals("Player 1 scored two and player two scored one time", "30 - 15", score);
 	}
 	@Test
-	public void test_1ScoredThreeAnd2ScoredOneTime(){
+	public void test_Score40_15() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player1Scored();
@@ -109,7 +110,7 @@ public class NumericScores {
 		assertEquals("Player 1 scored three and player two scored one time", "40 - 15", score);
 	}
 	@Test
-	public void test_2ScoredTwoAnd1ScoredOneTime(){
+	public void test_Score15_30() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -119,7 +120,7 @@ public class NumericScores {
 		assertEquals("Player 2 scored two and player two scored one time", "15 - 30", score);
 	}
 	@Test
-	public void test_2ScoredThreeAnd1ScoredOneTime(){
+	public void test_Score15_40() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -130,7 +131,7 @@ public class NumericScores {
 		assertEquals("Player 2 scored three and player two scored one time", "15 - 40", score);
 	}
 	@Test
-	public void test_2ScoredThreeAnd1ScoredTwoTime(){
+	public void test_Score30_40() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player1Scored();
@@ -142,7 +143,7 @@ public class NumericScores {
 		assertEquals("Player 2 scored three and player two scored two time", "30 - 40", score);
 	}
 	@Test
-	public void test_1ScoredThreeAnd2ScoredTwoTime(){
+	public void test_Score40_30() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player1Scored();
@@ -154,7 +155,7 @@ public class NumericScores {
 		assertEquals("", "40 - 30", score);
 	}
 	@Test
-	public void test_Deuce(){
+	public void test_Deuce() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -167,7 +168,7 @@ public class NumericScores {
 		assertEquals("", "deuce", score);
 	}
 	@Test
-	public void test_AdvantagePlayer1(){
+	public void test_AdvantagePlayer1() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -181,7 +182,7 @@ public class NumericScores {
 		assertEquals("", "advantage player 1", score);
 	}
 	@Test
-	public void test_AdvantagePlayer2(){
+	public void test_AdvantagePlayer2() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -195,7 +196,7 @@ public class NumericScores {
 		assertEquals("", "advantage player 2", score);
 	}
 	@Test
-	public void test_GamePlayer2(){
+	public void test_GamePlayer2() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -210,7 +211,7 @@ public class NumericScores {
 		assertEquals("", "game player 2", score);
 	}
 	@Test
-	public void test_GamePlayer1(){
+	public void test_GamePlayer1() throws TennisGameException{
 		game=new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -224,7 +225,34 @@ public class NumericScores {
 		
 		assertEquals("", "game player 1", score);
 	}
-	
+	@Test (expected=TennisGameException.class)
+	public void test_GameEnded_Player1Scored() throws TennisGameException{
+		game=new TennisGame();
+		
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player1Scored();
+		game.player1Scored();
+	}
+	@Test (expected=TennisGameException.class)
+	public void test_GameEnded_Player2Scored() throws TennisGameException{
+		game=new TennisGame();
+		
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player1Scored();
+		game.player2Scored();
+		game.player2Scored();
+	}
 	
 
 }
