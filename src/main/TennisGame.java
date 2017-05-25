@@ -44,14 +44,29 @@ public class TennisGame
 		return "";
 		
 	}
-	public int player1Scored(){
-		
-		return player1Points++;
+	public void checkGameEnded() {
+		 if (player1Points > 3 && (player1Points - player2Points) > 1) {
+		 	gameEnded = true;
+		 } else if (player2Points > 3 && (player2Points - player1Points) > 1) {
+		 	gameEnded = true;
+		 }
+	}
+	public void player1Scored() throws TennisGameException {
+		 if (gameEnded) {
+			 throw new TennisGameException("Player can't score!");
+		 } else {
+		 	 player1Points++;
+		 	 checkGameEnded();
+		 }
 	}
 	
-	public int player2Scored(){
-		
-		return player2Points++;
+	public void player2Scored() throws TennisGameException {
+		 if (gameEnded) {
+		 	throw new TennisGameException("Player can't score!");
+		 } else {
+		 	player2Points++;
+		 	checkGameEnded();
+		 }
 	}
 	
 	

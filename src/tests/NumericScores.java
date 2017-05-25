@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import main.TennisGame;
+import main.TennisGameException;
 
 // Testing of midgame scores before both players score three times
 public class NumericScores {
@@ -19,7 +20,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_score_15_0() {
+	public void test_score_15_0() throws TennisGameException{
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		String score = game.getScore() ;
@@ -28,7 +29,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_score_30_0() {
+	public void test_score_30_0() throws TennisGameException{
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player1Scored();
@@ -38,7 +39,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_score_40_0() {
+	public void test_score_40_0() throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player1Scored();
@@ -48,7 +49,7 @@ public class NumericScores {
 		assertEquals("Player1 scores three times", "40 - 0", score);	
 	}
 	@Test
-	public void test_score_0_15() {
+	public void test_score_0_15()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player2Scored();
 		String score = game.getScore() ;
@@ -56,7 +57,7 @@ public class NumericScores {
 		assertEquals("Player2 scores first", "0 - 15", score);	
 	}
 	@Test
-	public void test_score_0_30() {
+	public void test_score_0_30()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player2Scored();
 		game.player2Scored();
@@ -66,7 +67,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_score_0_40() {
+	public void test_score_0_40()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player2Scored();
 		game.player2Scored();
@@ -77,7 +78,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_score_15_15() {
+	public void test_score_15_15()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -87,7 +88,7 @@ public class NumericScores {
 		assertEquals("Player1 and player2 scores one time", "15 - 15", score);	
 	}
 	@Test
-	public void test_score_30_15() {
+	public void test_score_30_15()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -97,7 +98,7 @@ public class NumericScores {
 		assertEquals("Player1 scores 2 times and player2 one time", "30 - 15", score);	
 	}
 	@Test
-	public void test_score_40_15() {
+	public void test_score_40_15()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -108,7 +109,7 @@ public class NumericScores {
 		assertEquals("Player1 scores 3 times and player2 one time", "40 - 15", score);	
 	}
 	@Test
-	public void test_score_40_30() {
+	public void test_score_40_30()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -120,7 +121,7 @@ public class NumericScores {
 		assertEquals("Player1 scores 3 times and player2 two times", "40 - 30", score);	
 	}
 	@Test
-	public void test_score_15_30() {
+	public void test_score_15_30()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -130,7 +131,7 @@ public class NumericScores {
 		assertEquals("Player1 scores 1 time and player2 two times", "15 - 30", score);	
 	}
 	@Test
-	public void test_score_15_40() {
+	public void test_score_15_40() throws TennisGameException{
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -142,7 +143,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_score_30_40() {
+	public void test_score_30_40()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -154,7 +155,7 @@ public class NumericScores {
 		assertEquals("Player1 scores 2 times and player2 three times", "30 - 40", score);	
 	}
 	@Test
-	public void test_score_40_40() {
+	public void test_score_40_40() throws TennisGameException{
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -168,7 +169,7 @@ public class NumericScores {
 	}
 	
 	@Test
-	public void test_score_advantagePlayer1() {
+	public void test_score_advantagePlayer1()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -181,7 +182,7 @@ public class NumericScores {
 
 		assertEquals("Player1 is advantage", "Player1 advantage", score);	
 	}
-/* 	@Test
+/*	@Test
 	public void test_score_advantagePlayer2() {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
@@ -198,7 +199,7 @@ public class NumericScores {
 	}*/
 	
 	@Test
-	public void test_score_Player1_win() {
+	public void test_score_Player1_win()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -212,8 +213,8 @@ public class NumericScores {
 
 		assertEquals("Player1 is advantage", "Player1 wins", score);	
 	}
-	@Test
-	public void test_score_Player2_win() {
+/*	@Test
+	public void test_score_Player2_win()throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
 		game.player2Scored();
@@ -226,6 +227,17 @@ public class NumericScores {
 		String score = game.getScore() ;
 
 		assertEquals("Player1 is advantage", "Player2 wins", score);	
-	}
+	}*/
+	@Test (expected = TennisGameException.class)
+	 public void test_Exception() throws TennisGameException {
+	 	TennisGame game = new TennisGame();
+	 	game.player1Scored();
+	 	game.player1Scored();
+	 	game.player1Scored();
+	 	game.player1Scored();
+	 	game.player1Scored();
+	 	String score = game.getScore();		
+		
+	 }
 	
 }
