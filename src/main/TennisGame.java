@@ -8,7 +8,6 @@ public class TennisGame
 	
 	public TennisGame() 
 	{
-		// TO BE IMPLEMENTED
 	}
 	private String getScore(int points){
 		if(points==0)
@@ -55,7 +54,7 @@ public class TennisGame
 		 }
 	}
 	private void checkGameEnded() {
-		 if((player1Points>3||player2Points>3)&&Math.abs(player1Points-player2Points)>=2)
+		 if((player1Points>3 || player2Points>3) && Math.abs(player1Points-player2Points)>=2)
 		 	gameEnded=true;
 	}
 

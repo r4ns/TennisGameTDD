@@ -236,8 +236,9 @@ public class NumericScores {
 		String score = game. getScore();
 		assertEquals("Initial score incorrect", "game player2", score);
 	}
+	
 	@Test(expected=TennisGameException.class)
-	 public void test_ThrowExceptionPlr2() throws TennisGameException {
+	public void test_ThrowExceptionPlr2() throws TennisGameException {
 	 		TennisGame game = new TennisGame();
 	 		game.setPlayer1Points();
 			game.setPlayer1Points();
@@ -251,9 +252,9 @@ public class NumericScores {
 			game.setPlayer2Points();
 			game.setPlayer2Points();
 	 		String score = game.getScore() ;
-	 	}
+ 	}
 	@Test(expected=TennisGameException.class)
-	 public void test_ThrowExceptionPlr1() throws TennisGameException {
+	public void test_ThrowExceptionPlr1() throws TennisGameException {
 	 		TennisGame game = new TennisGame();
 	 		game.setPlayer1Points();
 			game.setPlayer1Points();
@@ -267,7 +268,7 @@ public class NumericScores {
 			game.setPlayer1Points();
 			game.setPlayer1Points();
 	 		String score = game.getScore() ;
-	 	}
+ 	}
 	 
 
 
