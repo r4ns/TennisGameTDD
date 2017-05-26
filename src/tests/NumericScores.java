@@ -48,7 +48,7 @@ public class NumericScores {
 		assertEquals("Initial score incorrect", "40 - 0", score);	
 	}
 	@Test
-	public void test_playerTwoLeadsBy15() {
+	public void test_playerTwoLeadsBy15() throws TennisGameException {
 		TennisGame game = new TennisGame();		
 		game.playerTwoScored();
 		String score = game.getScore() ;
@@ -56,7 +56,7 @@ public class NumericScores {
 		assertEquals("Initial score incorrect", "0 - 15", score);	
 	}
 	@Test
-	public void test_playerTwoLeadsBy30() {
+	public void test_playerTwoLeadsBy30() throws TennisGameException {
 		TennisGame game = new TennisGame();		
 		game.playerTwoScored();
 		game.playerTwoScored();
@@ -65,7 +65,7 @@ public class NumericScores {
 		assertEquals("Initial score incorrect", "0 - 30", score);	
 	}
 	@Test
-	public void test_playerTwoLeadsBy40() {
+	public void test_playerTwoLeadsBy40() throws TennisGameException {
 		TennisGame game = new TennisGame();		
 		game.playerTwoScored();
 		game.playerTwoScored();
@@ -166,12 +166,15 @@ public class NumericScores {
 	public void test_playerOneAdvantage() throws TennisGameException {
 		TennisGame game = new TennisGame();	
 		game.playerOneScored();
-		game.playerOneScored();
-		game.playerOneScored();
-		game.playerOneScored();
 		game.playerTwoScored();
 		game.playerTwoScored();
+		game.playerOneScored();
 		game.playerTwoScored();
+		game.playerOneScored();
+		game.playerOneScored();
+		
+		
+		
 		String score = game.getScore() ;
 		
 		assertEquals("Initial score incorrect", "advantage player 1", score);	
@@ -208,11 +211,10 @@ public class NumericScores {
 		TennisGame game = new TennisGame();	
 		game.playerOneScored();
 		game.playerOneScored();
+		game.playerTwoScored();
 		game.playerOneScored();
 		game.playerOneScored();
-		game.playerTwoScored();
-		game.playerTwoScored();
-	
+		
 		String score = game.getScore() ;
 		
 		assertEquals("Initial score incorrect", "game player 1", score);	
@@ -223,9 +225,18 @@ public class NumericScores {
 		TennisGame game = new TennisGame();	
 		game.playerOneScored();
 		game.playerOneScored();
+		
+		game.playerTwoScored();
+		
 		game.playerOneScored();
 		game.playerOneScored();
+		
+		game.playerTwoScored();
+		
 		game.playerOneScored();
+		
+		game.playerTwoScored();
+		game.getScore();
 		
 	}
 	

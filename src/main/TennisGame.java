@@ -13,6 +13,8 @@ public class TennisGame
 		
 	}
 	public void playerOneScored() throws TennisGameException{
+		
+		checkGameEnded();
 		if(gameEnded==true)
 		{
 			throw new TennisGameException();
@@ -20,11 +22,22 @@ public class TennisGame
 		}else{
 			
 			player1Points++;
+			
 		}
 	
 	}
-	public void playerTwoScored() {
-		player2Points++;
+	public void playerTwoScored() throws TennisGameException {
+		
+		checkGameEnded();
+		if(gameEnded==true)
+		{
+			throw new TennisGameException();
+			
+		}else{
+			
+			player2Points++;
+			
+		}
 		
 	}
 	public String getScore(){
