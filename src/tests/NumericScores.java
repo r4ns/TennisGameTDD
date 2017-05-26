@@ -312,7 +312,6 @@ public class NumericScores {
 		
 		game.player1Scored();
 		game.player1Scored();
-		
 	}
 	
 	@Test(expected = TennisGameException.class)
@@ -328,6 +327,5 @@ public class NumericScores {
 		game.player2Scored();
 		game.player2Scored();
 		game.player2Scored();
-		
 	}
 }
